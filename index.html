@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Author Photo Album</title>
+        <link href="design.css" rel ="stylesheet" type="text/css">
+        <script src="file.js" defer></script>
+    </head>
+    <body>
+        <h1>Photo Album of Famous authors</h1>
+        <h2>Filter:</h2>
+        <div id="filter-box">
+            <h3>
+
+            </h3>
+        </div>
+        <div id="box-1">
+            <p>This website is a photo album of famous authors. You may submit your favorite authors according to the information below:</p>
+            <dl>
+                <dt><strong>Image:</strong></dt>
+                <dd>A URL pointing to a representative image of the author on the web.</dd>
+                <dt><strong>Author:</strong></dt>
+                <dd>The name of the author in a small string.</dd>
+                <dt><strong>Alt:</strong></dt>
+                <dd>A concise description of the image.</dd>
+                <dt><strong>Tags:</strong></dt>
+                <dd>A comma-separated list of tags associated with the selected image.</dd>
+                <dt><strong>Description:</strong></dt>
+                <dd>A description of the author selected.</dd>
+            </dl>
+        </div>
+        <table class="table" id="table-id">
+            <caption>
+                <h2>Famous Authors &amp; Metadata</h2>
+            </caption>
+            <thead>
+                <th>Image</th>
+                <th>Author</th>
+                <th>Alt</th>
+                <th>Tags</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <form action='https://wt.ops.labs.vu.nl/api23/93353ef9' method="post" id="formID">
+                <tr>
+                    <td>
+                        <label for="image">Image:</label>
+                        <input type="text" name="image" id="image" required>
+                    </td>
+                    <td>
+                        <label for="author">Author:</label>
+                        <input type="text" name ="author" id="author" required>
+                    </td>
+                    <td>
+                        <label for="alt">Alt:</label>
+                        <input type="text" name="alt" id="alt">
+                    </td>
+                    <td>
+                        <label for="tags">Tags:</label>
+                        <input type="text" name="tags" id="tags">
+                    </td>
+                    <td>
+                        <label for="description">Description:</label>
+                        <input type="text" name="description" id="description">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+        <button id="reset-button">Reset</button>
+        <button id="update-button">Update</button>
+        </tbody>
+    </body>
+    <!-- Major stylistic changes were made in order to improve accessibility:
+        - Changes to font sizing and styling (improved readability)
+        - Backround colors were altered for added contrast (improved readability)
+        - Media Queries were added to ensure proper scaling for smaller devices (improved readability)
+        - Conscise explanation of the website layout and functions was added (improved intelligibility) -->

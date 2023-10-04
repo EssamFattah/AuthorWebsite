@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>API Documentation</title>
+    <link href="documentation.css" rel ="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1><center>A RESTful HTTP API</center></h1>
+    <div id="box-1">This web API provides access to a server that is used to store photos and
+        data submitted by the user. It covers the CRUD functionality and defines the
+        REST elements of each service, including the endpoint URI, HTTP methods, 
+        and content-type of the response.
+    </div>
+    <h2>CRUD Functionality</h2>
+    <h3>Create</h3>
+    <ul>
+    <li>Endpoint URI: '/add'</li>
+    <li>HTTP method: 'POST'</li>
+    <li>Content-Type: 'json'</li>
+    <li>Input: JSON data sent in the body of the HTTP request</li>
+    <br><strong>Example Input:</strong></br>
+    <br>{ "author": "testname",</br>
+    <br>"alt": "Image of testname",</br>
+    <br>"tags": "tag,author,science",</br>
+    <br>"image": "https://example.jpg",</br>
+    <br>"image": "https://example.jpg",</br>
+    <br>"description": "The internet and the Web aren't the same thing." }</br>
+    <br></br>
+    <li>Output: status code 500 (server problem that prevents it from fulfilling request) in case of error, 200 in case of success</li>
+    </ul>
+    <h3>Read</h3>
+    <ul>
+    <li>Endpoint URI: '/{id}'</li>
+    <li>HTTP method: 'GET'</li>
+    <li>Content-Type: 'json'</li>
+    <li>Input: None</li>
+    <li>Output: status code 404 (server cant find the request rescource) or 500 (server problem that prevents it from fulfilling request) in case of error, 200 in case of successful request</li>
+    </ul>
+    <h3>Update</h3>
+    <ul>
+    <li>Endpoint URI: '/items/{id}'</li>
+    <li>HTTP method: 'PUT'</li>
+    <li>Content-Type: 'json'</li>
+    <li>Input: JSON data sent in the body of the HTTP request</li>
+    <br>Example Input:</br>
+    <br>{ "author": "testname",</br>
+    <br>"alt": "Image of testname",</br>
+    <br>"tags": "tag,author,science",</br>
+    <br>"image": "https://example.jpg",</br>
+    <br>"image": "https://example.jpg",</br>
+    <br>"description": "The internet and the Web aren't the same thing." }</br>
+    <br></br>
+    <li>Output: status codes 400 (invalid request), 404 (server cant find the request rescource), 500 (server problem that prevents it from fulfilling request) in case of error, 204 (request has succeeded, but that the client doesn't need to navigate away from its current page.) in case of successful request</li>
+    </ul>
+    <h3>Delete</h3>
+    <ul>
+    <li>Endpoint URI: '/delete/{id}'</li>
+    <li>HTTP method: 'DELETE'</li>
+    <li>Content-Type: 'json'</li>
+    <li>Input: None</li>
+    <li>Output: status code 500 (server problem that prevents it from fulfilling request) in case of error, 200 in case of successful request</li>
+    </ul>
+    <p></p>
+  </body>
+</html>

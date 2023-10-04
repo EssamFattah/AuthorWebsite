@@ -1,0 +1,55 @@
+#box-1{
+    border-style: ridge;
+    border-width: 2px;
+    border-color: black;
+    background-color: lightcyan;
+    text-align: center;
+    margin-left:  3cm;
+    margin-right: 3cm;
+    padding: 20px;
+    font-size: medium;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, #a1fffd, rgb(249, 219, 122), #ff6fd9);
+  
+  }
+  
+  body {
+    font: 1em "Fira Sans", sans-serif;
+    margin: 1cm;
+    color: #333;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 25s infinite;
+  }
+  
+  @keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+  
+  .content {
+    background: white;
+    width: 70vw;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0,0,0,.15);
+  }
+  
+  
+  .fun {
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: .5em 1.25em;
+    background: linear-gradient(90deg, #ee6352, purple, #ee6352);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 350ms;
+  }
+  
+  .fun:hover {
+    background-position: right;
+  }

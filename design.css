@@ -1,0 +1,149 @@
+p{
+    margin: 20px 25px;
+    font-style: normal;
+    font-size: medium;
+    font-weight: normal;
+    font-variant: no-common-ligatures proportional-nums;
+    font-family: Arial, Helvetica, sans-serif;
+    font: arial;
+    text-align: center;
+    text-indent: 0px;
+    text-transform: none;
+    vertical-align: auto;
+}
+
+#filter-box{
+    text-align: center;
+    border-style: ridge;
+    border-width: 2px;
+    border-color: black;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+}
+
+#author-button{
+    background-color: rgb(231, 251, 241);
+    border-color: black;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+h2{
+    text-align: center;
+}
+
+pre{
+    font-variant: normal;
+    font-size: medium;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#box-1{
+    border-style: ridge;
+    border-width: 2px;
+    border-color: black;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/250px-Flag_of_France_%28lighter_variant%29.svg.png");
+    background-size: 30vw;
+    background-repeat: repeat-y;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+table{
+    background-color: aliceblue;
+    margin: 0 auto;
+}
+
+table, td, th{
+    border-width: 2px;
+    border-style: ridge;
+    border-color:black;
+    border-spacing:5px;
+    text-align: center;
+}
+
+figure{
+    text-align: left;
+}
+
+span{
+    background-color: gold;
+}
+
+a:link{
+    margin: 20px 25px;
+    color:darkblue
+}
+
+a:hover{
+    color:blue
+}
+
+a:active{
+    color:brown
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+caption{
+    text-align: center;
+}
+
+img{
+    width:25vw;
+    float:none;
+}
+
+li{
+    text-align: left;
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+.table{
+    width: 100%;
+    border-collapse: separate;
+}
+.table td,
+.table th{
+    padding: 3px 10px;
+    border: 1px solid black;
+}
+
+@media print {
+    h1 {page-break-before: always;}
+    footer {page-break-after: always;}
+    body {
+        widows: 3;
+        orphans: 3;
+    }
+}
+
+@media(max-width: 500px) {
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr{
+        display: block;
+        width: 100%;
+    }
+    .table td{
+        display: block;
+        text-align: center;
+    }
+}
